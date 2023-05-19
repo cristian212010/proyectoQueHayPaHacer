@@ -1,0 +1,74 @@
+#aboutUs{
+    font-size: 3rem;
+}
+
+#aboutUs h2{
+    font-size: 8rem;
+}
+
+#historia{
+    display: flex;
+    justify-content: center;
+}
+
+#pHistoria{
+    display: flex;
+    justify-content: space-around;
+}
+
+#pObjetivos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#imgObjetivos{
+    max-width: 40rem;
+}
+
+#vision{
+    display: flex;
+    justify-content: end;
+}
+
+#pVision{
+    display: flex;
+    justify-content: space-around;
+}
+
+#imgVision{
+    max-width: 40rem;
+}
+
+#us{
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+}
+
+#card1{
+    display: flex;
+}
+
+#card2{
+    display: flex;
+}
+.padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.tarjetaNosotros{
+    border: rgb(0, 0, 0) solid;font-size: 2rem;
+    width: 30rem;
+    border: 1px solid #000000;
+    margin: 2rem;
+}
+.tarjetaNosotros img{
+    min-height: 40rem;
+    max-height: 50rem;
+}

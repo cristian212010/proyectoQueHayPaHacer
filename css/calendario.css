@@ -1,0 +1,107 @@
+:root {
+    --gris: #f2f2f2;
+    --verde: #465902;
+    --amarillo: #f2d605;
+    --naranjaDebil: #f28c06;
+    --naranjaFuerte: #f25816;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 5rem;
+    padding-top: 2rem;
+}
+body{
+    background-color: var(--gris);
+}
+
+.calendario{
+    background-color:var(--amarillo);
+    width: 80%;
+    margin: 1em auto;
+    font-size: 30px;
+    padding-bottom: 2rem;
+    min-height: 54vh;
+}
+.infoCalendario{
+    display: flex;
+    align-items: center;
+    padding: 0px 2em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: var(--naranjaDebil);
+}
+
+.anterior, .siguiente{
+    cursor: pointer;
+    font-size: 1.4em;
+}
+.anterior{
+    margin-right: auto;
+}
+.siguiente{
+    margin-left: auto;
+}
+
+.calendarioSemanas{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap:10px;
+    text-align: center;
+}
+.datosCalendario{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap:10px; 
+    text-align: center;
+}
+.semanas,.datos{
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+.mes, .año{
+    padding: .5em 1em;
+}
+
+
+.diasAnteriores{
+    opacity: .3;
+}
+.dias:hover{
+    transform: scale(1.25)
+}
+.dias{
+    cursor: pointer;
+}
+#id6{
+    background-color: coral;
+    color: white;
+    width: 50%;
+    border-radius: 50%;
+    margin: auto; 
+}
+.una{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.una p:hover{
+    transform: scale(1.02);
+}
+#id6,#id12,#id24,#id20,#id15,#id28{
+    background-color: coral;
+    color: white;
+    width: 50%;
+    border-radius: 50%;
+    margin: auto; 
+}
+.card-body{
+    background-color:white;
+}

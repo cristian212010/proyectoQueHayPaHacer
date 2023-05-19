@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Que hay pa'cer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/Buscador.css">
+  <link rel="shortcut icon" href="img/logo.png">
+</head>
+
+<body>
+  <header>
+
+  </header>
+    <section class="contenido" id="contenido">
+      <article>
+        <h2 class="titulo">Buscador</h2>
+        <div class="padre">
+        <form class="form">
+        <div>
+          <select class="seleccionar" id="lugar">
+            <option value=""> Categoria</option>
+            <option value="parque">Parque</option>
+            <option value="restaurante">Restaurante</option>
+            <option value="evento">Evento</option>
+          </select>
+        </div>
+        <div>
+          <select class="seleccionar" id="ciudad">
+            <option value=""> Ciudad</option>
+            <option value="Bucaramanga">Bucaramanga</option>
+            <option value="Floridablanca">Floridablanca</option>
+            <option value="Giron">Giron</option>
+            <option value="Piedecuesta">Piedecuesta</option>
+          </select>
+        </div>
+        <div>
+          <select class="seleccionar" id="tipoEntretenimiento">
+            <option value=""> Tipo Entretenimiento</option>
+            <option value="familia">Familiar</option>
+            <option value="amigos">Amigos</option>
+            <option value="pareja">Parejas</option>
+            <option value="solo">Solo</option>
+          </select>
+        </div>
+        <div>
+          <select class="seleccionar" id="edadMin">
+            <option value=""> Edad Minima</option>
+          </select>
+        </div>
+        <div>
+          <select class="seleccionar" id="edadMax">
+            <option value=""> Edad Maxima</option>
+          </select>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary Favoritos" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Mostrar Favoritos</button>
+        </div>
+      </form>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header tituloFavoritos">
+              <h1 class="modal-title " id="exampleModalLabel">Favoritos</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+            </div>
+            <div class="modal-body">
+  
+              <table class="table ">
+                <thead>
+                  <tr>
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>Horario</th>
+                    <th></th>
+  
+                  </tr>
+  
+                </thead>
+                <tbody class="tbody">
+  
+                </tbody>
+  
+              </table>
+              <a href="Buscador.html">
+                <button type="button" class="btn btn-danger borrarTodo" style="font-size: 2rem;">Borrar Todo</button>
+              </a>
+  
+            </div>
+  
+            <div class="modal-footer">
+  
+              <button type="button" class="btn btn-secondary " style="font-size: 2rem;"
+                data-bs-dismiss="modal">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="contenedor container mt-5">
+          <div class="row">
+            <div class="col">
+              <div class="tarjetas  " id="tarjetas"></div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="eventos d-flex p-5 justify-content-center">
+      <div class="listEventos">
+          <div class="card" style="width: 18rem;">
+              <img src="img/eventoRutaErmitaño.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ruta del Ermitaño</h5>
+                <p class="card-text"></p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Floridablanca, Parque San Pio</li>
+                <li class="list-group-item">Fecha: 16 de Abril</li>
+                <li class="list-group-item">familia, pareja, amigos</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Mas informacion</a>
+              </div>
+            </div>
+      </div>
+      </div>
+  </section>
+    <footer class="fondo text-center text-white">
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+    <script src="js/dataBase.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/Buscador.js"></script>
+</body>
+
+</html>

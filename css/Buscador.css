@@ -1,0 +1,94 @@
+:root {
+    --gris: #f2f2f2;
+    --verde: #465902;
+    --amarillo: #f2d605;
+    --naranjaDebil: #f28c06;
+    --naranjaFuerte: #f25816;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 1rem; 
+    gap: 10px;
+    background-color: var(--gris);
+}
+.seleccionar{
+    font-size: 18px;
+    width: 22rem;
+    border-radius: 1.5rem;
+    height: 3rem;
+}
+.padre{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; 
+    background-color: var(--gris);
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    background-color: var(--gris);
+    margin: 0px;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    background-color: var(--gris);
+    
+}
+.boton{
+    color:var(--verde); 
+    background-color:var(--amarillo);
+    font-weight: bolder;
+    border: none;
+}
+.boton:hover{
+    background-color: var(--gris);
+    color: black;
+}
+.card{
+    background-color: var(--gris);
+}
+.fondoUl li{
+    background-color: var(--gris);
+
+}
+.Favoritos{
+    font-size: 18px;
+    width: 22rem;
+    border-radius: 1.5rem;
+    height: 3rem;
+    background-color: var(--naranjaFuerte);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: bolder;
+    border: none;
+}
+.Favoritos:hover{
+    background-color: var(--naranjaDebil);
+    color: black;
+}
+
+.modal{
+    font-size: 1.7rem;
+}
+.target:hover{
+    transform: scale(1.05)
+}
+.inactive{
+    display: none;
+}

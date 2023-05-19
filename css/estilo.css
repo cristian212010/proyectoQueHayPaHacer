@@ -1,0 +1,194 @@
+:root {
+    --gris: #f2f2f2;
+    --verde: #465902;
+    --amarillo: #f2d605;
+    --naranjaDebil: #f28c06;
+    --naranjaFuerte: #f25816;
+}
+
+*{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--gris);    
+    height: 100vh; 
+
+}
+#nav {
+    background-color: var(--naranjaFuerte);
+    font-size: 3rem;
+}
+
+
+
+#nav ul {
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#nav li {
+    background: var(--amarillo);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+#nav li :hover{
+    background-color: var(--naranjaFuerte);
+    color: white;
+}
+
+#nav a {
+    color:var(--verde);
+    text-decoration: none;
+    list-style: none;
+}
+
+#contenido{
+    display: grid;
+    grid-template-columns:75% 1fr;
+    min-height: 100%;
+}
+
+.contenido article{
+    font-size: 3.5rem;
+}
+
+
+
+
+.buton{
+    font-size: 6rem;
+    font-weight: bolder;
+    background-color: var(--naranjaDebil);
+}
+
+#botonPricipal{
+    background-color: var(--naranjaDebil)
+}
+
+#botonPricipal :hover{
+    background-color: var(--verde);
+    color: white;
+}
+
+.card {
+    font-size: 2rem;
+    width: 28rem;
+    border: 1px solid #000000;
+    height: 60rem;
+    
+}
+.card a{
+    text-decoration: none;
+    color: var(--naranjaFuerte);
+    transition: 0.2s;
+}
+.card img{
+    height: 26rem;
+}
+.card a:hover{
+    color: var(--naranjaDebil);
+}
+
+*{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--gris);   
+}
+#nav {
+    background-color: var(--naranjaFuerte);
+    font-size: 3rem;
+}
+
+
+
+#nav ul {
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#nav li {
+    background: var(--amarillo);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+#nav li :hover{
+    background-color: var(--naranjaFuerte);
+    color: white;
+}
+
+#nav a {
+    color:var(--verde);
+    text-decoration: none;
+    list-style: none;
+}
+
+#contenido{
+    display: grid;
+    grid-template-columns:80% 1fr;
+    
+}
+
+.contenido article{
+    font-size: 3.5rem;
+}
+
+.buton{
+    font-size: 6rem;
+    font-weight: bolder;
+    background-color: var(--naranjaDebil);
+}
+
+#botonPrincipal{
+    background-color: var(--naranjaDebil)
+}
+
+#botonPrincipal:hover{
+    background-color:#f2a305;
+    color: rgb(43, 28, 28);
+}
+
+.eventoRandom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+    min-height: 41vh;
+    padding-bottom: 2.5rem;
+}
+.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+footer{
+    font-size: 2rem;
+}
+footer a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+footer a:hover{
+    
+    color: var(--naranjaFuerte);
+}
+footer li{
+    list-style: none;
+}.btn-floating{
+    border: none;
+}
+.botonEnviar{
+    font-size: 2rem;
+    border: none;
+}
+.fondo{
+    background-color: gray;
+}
+
+.eventos{
+    background-color:var(--naranjaFuerte)}
+    
